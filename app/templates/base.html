@@ -132,7 +132,7 @@
                           <ul class="drop-down-multilevel">
                             
                             {% for sub_product in SubProducts %}
-                              <li><a href="javascript:void(0)">{{ sub_product.name }}</a></li>
+                              <li><a href="{% url 'product' sub_product.pk %}">{{ sub_product.name }}</a></li>
                             {% endfor %}
 
                           </ul>

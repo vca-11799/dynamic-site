@@ -2,20 +2,19 @@
 
 {% load static %}
 
-{% block title %}{{ ProductDetails.name }}{% endblock title %}
+{% block title %} {{ sub_product.name }} {% endblock title %}
 
 {% block main-content %}
 
 <section
   class="page-title center bg-overlay-black-50 jarallax"
   data-speed="0.6"
-  data-img-src="images/bg/20.jpg"
->
+  data-img-src="images/bg/20.jpg">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
         <div class="page-title-name">
-          <h1 class="text-black">{{ ProductDetails.name }}</h1>
+          <h1 class="text-black">{{ sub_product.name }}</h1>
           <p class="text-black">We know the secret of your success</p>
         </div>
         <ul class="page-breadcrumb">
@@ -23,8 +22,8 @@
             <a href="#"><i class="fa fa-home"></i> Home</a>
             <i class="fa fa-angle-double-right"></i>
           </li>
-          <li><a href="#">page</a> <i class="fa fa-angle-double-right"></i></li>
-          <li><span>About us 06</span></li>
+          <li><a href="#">Products</a> <i class="fa fa-angle-double-right"></i></li>
+          <li><span>{{ sub_product.name }}</span></li>
         </ul>
       </div>
     </div>
@@ -35,20 +34,26 @@
   <div class="container">
     <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-         
+    {% if products %}
+        <p>Number of products: {{ products|length }}</p> 
+        {% for product in products %}
             <div class="isotope columns-4 popup-gallery">
-              <div class="grid-item photography branding">
-                  <div class="portfolio-item">
-                   <img src="{%static 'images/portfolio/small/01.jpg' %}" alt="">
-                     <div class="portfolio-overlay">
-                        <h4 class="text-white"> <a href="portfolio-single-01.html"> Your title here </a> </h4>
-                        <span class="text-white"> <a href="#"> Branding </a> | <a href="#"> Web Design </a> </span>
-                      </div>
-                    <a class="popup portfolio-img" href="{%static 'images/portfolio/small/01.jpg' %}"><i class="fa fa-arrows-alt"></i></a>
+                <div class="grid-item photography branding">
+                    <div class="portfolio-item">
+                        <img src="{{ product.image.url }}" alt="">
+                        <div class="portfolio-overlay">
+                            <h4 class="text-white"> <a href="portfolio-single-01.html"> {{ product.name }} </a> </h4>
+                            <span class="text-white"> <a href="#"> Branding </a> | <a href="#"> Web Design </a> </span>
+                        </div>
+                        <a class="popup portfolio-img" href="{{ product.image.url }}"><i class="fa fa-arrows-alt"></i></a>
+                    </div>
                 </div>
-               </div>
-
-         </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No products found.</p>
+    {% endif %}
+    </div>
        </div>
      </div>
     </div>
