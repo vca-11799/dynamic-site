@@ -1,0 +1,730 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+      <!--=================================
+ banner -->
+{% block main-content %}
+      <section
+        class="slider-parallax typer-banner business bg-overlay-black-50 jarallax"
+        data-speed="0.6"
+        data-img-src="{%static 'images/bg/18.jpg' %}"
+      >
+        <div class="slider-content-middle">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <div class="slider-content text-center">
+                  <h1 class="text-white">
+                    Design, Code &
+                    <span
+                      class="typer"
+                      data-delay="150"
+                      data-words="Success,Launch,Webster"
+                      data-colors="#84ba3f,#84ba3f,#84ba3f"
+                    ></span>
+                    <span
+                      class="cursor"
+                      data-cursorDisplay="|"
+                      data-owner="some-id"
+                    ></span>
+                  </h1>
+                  <p class="text-white mt-40">
+                    "Truly ideal solutions for your business. Create a website
+                    that you are gonna be proud of."
+                  </p>
+                  <a class="button move mt-20" href="#"> Let's talk </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=================================
+ banner -->
+
+      <!--=================================
+ about -->
+
+      <section class="blockquote-section page-section-ptb">
+        <div class="container">
+          <div class="row no-gutter">
+            <div class="col-sm-7 text-start blockquote-section-left">
+              <h6 class="lacks-heading d-none">Lacks Heading</h6>
+              <!-- lacks heading for w3c -->
+              <blockquote class="blockquote quote">
+                For a first time entrepreneur, choosing a business that has a
+                clear revenue path is extremely important.
+                <cite
+                  >- Collis Ta’eed
+                  <span class="text-gray"> CEO of Envato</span></cite
+                >
+              </blockquote>
+            </div>
+            <div class="col-sm-5 blockquote-section-right">
+              <img
+                class="img-fluid"
+                src="{%static 'images/about/05.jpg' %}"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=================================
+ about -->
+
+      <!--=================================
+ portfolio -->
+
+      <section class="white-bg o-hidden popup-gallery">
+        <div class="container-fluid p-0">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <div
+                class="owl-carousel"
+                data-items="4"
+                data-md-items="4"
+                data-sm-items="3"
+                data-xs-items="2"
+                data-xx-items="1"
+                data-space="0"
+              >
+                <div class="item">
+                  <div class="portfolio-item">
+                    <img src="images/portfolio/small/01.jpg" alt="" />
+                    <div class="portfolio-overlay">
+                      <h4 class="text-white">
+                        <a href="portfolio-single-01.html">Post item image</a>
+                      </h4>
+                      <span class="text-white">
+                        <a href="#"> Photography </a>|
+                        <a href="#">Illustration </a>
+                      </span>
+                    </div>
+                    <a
+                      class="popup portfolio-img"
+                      href="images/portfolio/small/01.jpg"
+                      ><i class="fa fa-arrows-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="portfolio-item">
+                    <img src="images/portfolio/small/02.jpg" alt="" />
+                    <div class="portfolio-overlay">
+                      <h4 class="text-white">
+                        <a href="portfolio-single-01.html"> Post item image</a>
+                      </h4>
+                      <span class="text-white">
+                        <a href="#"> Photography </a>|
+                        <a href="#">Illustration </a>
+                      </span>
+                    </div>
+                    <a
+                      class="popup portfolio-img"
+                      href="images/portfolio/small/02.jpg"
+                      ><i class="fa fa-arrows-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="portfolio-item">
+                    <img src="images/portfolio/small/03.jpg" alt="" />
+                    <div class="portfolio-overlay">
+                      <h4 class="text-white">
+                        <a href="portfolio-single-01.html"> Post item image</a>
+                      </h4>
+                      <span class="text-white">
+                        <a href="#"> Photography </a>|
+                        <a href="#">Illustration </a>
+                      </span>
+                    </div>
+                    <a
+                      class="popup portfolio-img"
+                      href="images/portfolio/small/03.jpg"
+                      ><i class="fa fa-arrows-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="portfolio-item">
+                    <img src="images/portfolio/small/04.gif" alt="" />
+                    <div class="portfolio-overlay">
+                      <h4 class="text-white">
+                        <a href="portfolio-single-01.html"> Post item image</a>
+                      </h4>
+                      <span class="text-white">
+                        <a href="#"> Photography </a>|
+                        <a href="#">Illustration </a>
+                      </span>
+                    </div>
+                    <a
+                      class="popup portfolio-img"
+                      href="images/portfolio/small/04.gif"
+                      ><i class="fa fa-arrows-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="portfolio-item">
+                    <img src="images/portfolio/small/07.jpg" alt="" />
+                    <div class="portfolio-overlay">
+                      <h4 class="text-white">
+                        <a href="portfolio-single-01.html"> Post item image</a>
+                      </h4>
+                      <span class="text-white">
+                        <a href="#"> Photography </a>|
+                        <a href="#">Illustration </a>
+                      </span>
+                    </div>
+                    <a
+                      class="popup popup-youtube"
+                      href="https://www.youtube.com/watch?v=LgvseYYhqU0"
+                      ><i class="fa fa-play"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="portfolio-item">
+                    <img src="images/portfolio/small/06.jpg" alt="" />
+                    <div class="portfolio-overlay">
+                      <h4 class="text-white">
+                        <a href="portfolio-single-01.html"> Post item image </a>
+                      </h4>
+                      <span class="text-white">
+                        <a href="#"> Photography </a>|
+                        <a href="#">Illustration </a>
+                      </span>
+                    </div>
+                    <a
+                      class="popup portfolio-img"
+                      href="images/portfolio/small/06.jpg"
+                      ><i class="fa fa-arrows-alt"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=================================
+ portfolio -->
+
+      <!--=================================
+ counter -->
+
+      <section class="black-bg page-section-ptb">
+        <h6 class="lacks-heading d-none">Lacks Heading</h6>
+        <!-- lacks heading for w3c -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6 sm-mb-40">
+              <div class="counter big-counter text-center">
+                <span
+                  class="timer theme-color"
+                  data-to="4905"
+                  data-speed="10000"
+                  >4905</span
+                >
+                <label class="text-white">ORDERED COFFEE'S</label>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 sm-mb-40">
+              <div class="counter big-counter text-center">
+                <span
+                  class="timer theme-color"
+                  data-to="3750"
+                  data-speed="10000"
+                  >3750</span
+                >
+                <label class="text-white">QUESTIONS ANSWERED</label>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 xs-mb-40">
+              <div class="counter big-counter text-center">
+                <span
+                  class="timer theme-color"
+                  data-to="4782"
+                  data-speed="10000"
+                  >4782</span
+                >
+                <label class="text-white">COMPLETED PROJECTS</label>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="counter big-counter text-center">
+                <span
+                  class="timer theme-color"
+                  data-to="3237"
+                  data-speed="10000"
+                  >3237</span
+                >
+                <label class="text-white">HAPPY CLIENTS</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=================================
+ counter -->
+
+      <!--=================================
+ feature -->
+
+      <section class="custom-content-02 white-bg-bg page-section-ptb">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 mb-60">
+              <div class="feature-text left-icon">
+                <div class="feature-icon">
+                  <span class="ti-layers-alt"></span>
+                </div>
+                <div class="feature-info">
+                  <h5 class="text-back">Many Style Available</h5>
+                  <p>
+                    Truly believe Augustine’s words are true and if you look at
+                    history you know it is true. There are many people in.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 mb-60">
+              <div class="feature-text left-icon">
+                <div class="feature-icon">
+                  <span class="ti-mouse"></span>
+                </div>
+                <div class="feature-info">
+                  <h5 class="text-back">Parallax Sections</h5>
+                  <p>
+                    For those of you who are serious about having more, doing
+                    more, giving more and being more, success is achievable.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 mb-60">
+              <div class="feature-text left-icon">
+                <div class="feature-icon">
+                  <span class="ti-hand-open"></span>
+                </div>
+                <div class="feature-info">
+                  <h5 class="text-back">Unlimited layouts</h5>
+                  <p>
+                    The last thing before retiring was examination of the day.
+                    At the age of 79, he ascribed his health to temperance.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 xs-mb-40">
+              <div class="feature-text left-icon">
+                <div class="feature-icon">
+                  <span class="ti-desktop"></span>
+                </div>
+                <div class="feature-info">
+                  <h5 class="text-back">Perfect design</h5>
+                  <p>
+                    Franklin’s extraordinary success in life and politics can be
+                    attributed to his perseverance to overcome his personal.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 xs-mb-40 xs-mt-20">
+              <div class="feature-text left-icon">
+                <div class="feature-icon">
+                  <span class="ti-headphone"></span>
+                </div>
+                <div class="feature-info">
+                  <h5 class="text-back">Fast Customer support</h5>
+                  <p>
+                    He other virtues practice in succession by Franklin were
+                    silence, order, resolution, frugality, industry, sincerity.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 xs-mt-20">
+              <div class="feature-text left-icon">
+                <div class="feature-icon">
+                  <span class="ti-shield"></span>
+                </div>
+                <div class="feature-info">
+                  <h5 class="text-back">Powerful Performance</h5>
+                  <p>
+                    From eight till twelve he worked at his trade. From twelve
+                    to one he read or overlooked his accounts and dined.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=================================
+ feature -->
+
+      <!--=================================
+ custom -->
+
+      <section
+        class="custom-content-03 page-section-ptb pattern full-width"
+        style="background: url(static/images/pattern/pattern-bg.png) repeat"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <h2>
+                Webster has powerful options & tools, unlimited designs,
+                responsive framework and amazing support.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=================================
+ custom -->
+
+      <!--=================================
+ play-video -->
+
+      <section
+        class="page-section-pt bg-overlay-theme-90 parallax"
+        style="background-image: url(images/bg/17.jpg)"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-9 position-relative">
+              <div class="play-video-section text-center">
+                <div class="play-video text-center">
+                  <a
+                    class="view-video popup-youtube"
+                    href="https://www.youtube.com/watch?v=LgvseYYhqU0"
+                  >
+                    <i class="fa fa-play"></i>
+                  </a>
+                </div>
+                <div class="content mt-40">
+                  <h2 class="text-white mb-20">
+                    We will help you to achieve your goals and to grow your
+                    business.
+                  </h2>
+                  <h5 class="text-white mb-50">
+                    <i>Let's make something great together</i>
+                  </h5>
+                  <img
+                    class="img-fluid mx-auto"
+                    src="images/objects/mac-book.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=================================
+ play-video -->
+
+      <!--=================================
+ custom -->
+
+      <section class="custom-content-02 white-bg-bg page-section-ptb">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 xs-mb-40">
+              <div class="feature-text round theme-icon">
+                <div class="feature-icon">
+                  <span class="ti-paint-bucket"></span>
+                </div>
+                <div class="feature-info">
+                  <h5 class="text-back">Unlimited Colors</h5>
+                  <p>
+                    You will begin to realize why this exercise is called the
+                    Dickens Pattern with reference to the.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 xs-mb-40">
+              <div class="feature-text round theme-icon">
+                <div class="feature-icon">
+                  <span class="ti-heart"></span>
+                </div>
+                <div class="feature-info">
+                  <h5 class="text-back">Blog Options</h5>
+                  <p>
+                    Have a think about something that you do that you are maybe
+                    not motivated to change about yourself.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 xs-mb-40">
+              <div class="feature-text round theme-icon">
+                <div class="feature-icon">
+                  <span class="ti-hand-open"></span>
+                </div>
+                <div class="feature-info">
+                  <h5 class="text-back">Unlimited layouts</h5>
+                  <p>
+                    Get yourself nice and relaxed and settled. Concentrate on
+                    your breathing, engage in the moment.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+              <div class="feature-text round theme-icon">
+                <div class="feature-icon">
+                  <span class="ti-image"></span>
+                </div>
+                <div class="feature-info">
+                  <h5 class="text-back">Revolution Slider</h5>
+                  <p>
+                    Engage with the idea of really being there. Step Three:
+                    Imagine that a few more steps ahead there.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=================================
+ custom -->
+
+      <!--=================================
+ custom -->
+
+      <section
+        class="page-section-ptb bg-overlay-black-70 jarallax"
+        data-speed="0.6"
+        data-img-src="images/bg/02.jpg"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center mt-100 mb-100 position-relative">
+              <h2 class="text-white fw-6">
+                Webster is Truly lightweight HTML5 template on the market
+              </h2>
+              <p class="text-white mt-20">
+                Lightweight and load super fast so you will never lose another
+                customer
+              </p>
+              <div class="mt-30">
+                <a class="button icon xs-mt-10" href="#">
+                  More Demo
+                  <i class="fa fa-hand-o-right"></i>
+                </a>
+                <a
+                  class="button icon white button-border xs-mt-10"
+                  target="_blank"
+                  href="#"
+                >
+                  View more
+                  <i class="fa fa-hand-o-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=================================
+ custom -->
+
+      <!--=================================
+ action -->
+
+      <section class="action-box theme-bg full-width">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 position-relative">
+              <h3>
+                <strong> Webster: </strong> The most powerful template ever on
+                the market
+              </h3>
+              <p>
+                Create tailor-cut websites with the exclusive multi-purpose
+                responsive template along with powerful features.
+              </p>
+              <a class="button button-border white" href="#">
+                <span>Purchase Now</span>
+                <i class="fa fa-download"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=================================
+ action -->
+{% endblock main-content %}
+      <!--=================================
+ footer -->
+
+      <footer id="footer-fixed" class="footer black-bg">
+        <div class="page-section-pt">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-6 sm-mb-30">
+                <div class="footer-logo">
+                  <img
+                    id="logo-footer"
+                    class="mb-20"
+                    src="images/logo.png"
+                    alt=""
+                  />
+                  <p class="pb-10">
+                    Webster is the most enticing, creative, modern and
+                    multipurpose Premium HTML5 Template suitable for any
+                    business or corporate websites. Build whatever you like with
+                    the Webster. It has endless possibilities for creating
+                    stunning websites no matter what type of business is!
+                  </p>
+                </div>
+                <div class="social-icons color-hover">
+                  <ul>
+                    <li class="social-facebook">
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="social-twitter">
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="social-dribbble">
+                      <a href="#"><i class="fa fa-dribbble"></i> </a>
+                    </li>
+                    <li class="social-linkedin">
+                      <a href="#"><i class="fa fa-linkedin"></i> </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-6 sm-mb-30">
+                <div class="footer-useful-link footer-hedding">
+                  <h6 class="text-white mb-30 mt-10 text-uppercase">
+                    Navigation
+                  </h6>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-6 xs-mb-30">
+                <div class="footer-useful-link footer-hedding">
+                  <h6 class="text-white mb-30 mt-10 text-uppercase">
+                    Useful Link
+                  </h6>
+                  <ul>
+                    <li><a href="#">Create Account</a></li>
+                    <li><a href="#">Company Philosophy</a></li>
+                    <li><a href="#">Corporate Culture</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Client Management</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <h6 class="text-white mb-30 mt-10 text-uppercase">
+                  Contact Us
+                </h6>
+                <ul class="addresss-info">
+                  <li>
+                    <i class="fa fa-map-marker"></i>
+                    <p>Address: 17504 Carlton Cuevas Rd, Gulfport, MS, 39503</p>
+                  </li>
+                  <li>
+                    <i class="fa fa-phone"></i>
+                    <a href="tel:7042791249"> <span>+(704) 279-1249 </span> </a>
+                  </li>
+                  <li>
+                    <i class="fa fa-envelope-o"></i>Email: letstalk@webster.com
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-widget mt-20">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <p class="mt-15">
+                    &copy;Copyright
+                    <span id="copyright">
+                      <script>
+                        document
+                          .getElementById("copyright")
+                          .appendChild(
+                            document.createTextNode(new Date().getFullYear())
+                          );
+                      </script></span
+                    >
+                    <a href="#"> Webster </a> All Rights Reserved
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!--=================================
+ footer -->
+    </div>
+
+    <div id="back-to-top">
+      <a class="top arrow" href="#top"
+        ><i class="fa fa-angle-up"></i> <span>TOP</span></a
+      >
+    </div>
+
+    <!--=================================
+ jquery -->
+
+    <!-- jquery -->
+    <script src="{%static 'js/jquery-3.6.0.min.js' %}"></script>
+
+    <!-- plugins-jquery -->
+    <script src="{%static 'js/plugins-jquery.js' %}"></script>
+
+    <!-- plugin_path -->
+    <script>
+      var plugin_path = "static/js/";
+    </script>
+
+    <!-- REVOLUTION JS FILES -->
+    <script src="{%static 'revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+    <script src="{%static 'revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script src="{%static 'revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+    <script src="{%static 'revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+    <script src="{%static 'revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+    <script src="{%static 'revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+    <script src="{%static 'revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+    <script src="{%static 'revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+    <script src="{%static 'revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+    <script src="{%static 'revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+    <script src="{%static 'revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+    <!-- revolution custom -->
+    <script src="{%static 'revolution/js/revolution-custom.js' %}"></script>
+
+    <!-- custom -->
+    <script src="{%static 'js/custom.js' %}"></script>
+  </body>
+</html>
